@@ -1,0 +1,53 @@
+/*colors*/
+$grayo: #F8F8F8
+$color: #654486
+$text_color: #2c3e50
+$error_color: #ef5953
+$success_color: #59c294
+
+/*fonts*/
+@font-face
+  font-family: 29LT Bukra
+  src: url('/fonts/29ltbukraregular.ttf')
+
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+  font-family: '29LT Bukra'
+
+p
+  font-weight: lighter
+
+body
+  background: $grayo url('../assets/p1.jpg') center
+
+.btn
+  background: $color
+  color: white
+  padding: 10px 40px
+  text-decoration: none
+  margin-top: 20px
+  margin-bottom: 20px
+  border: none
+  cursor: pointer
+  box-shadow: 0 0 10px gray
+  transition: 0.5s ease all
+
+  &:hover
+    background: lighten($color, 5)
+
+  &:active
+    transform: scaleX(1.1)
+
+
+.btn-error
+  background: $error_color
+
+  &:hover
+    background: lighten($error_color, 5)
+
+.page-tools
+  a
+    cursor: pointer
+    color: $color
